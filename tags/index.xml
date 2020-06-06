@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Yaroslav Bibaev</title>
-    <link>https://ybibaev.github.io/tags/</link>
+    <link>https://bibaev.dev/tags/</link>
     <description>Recent content in Tags on Yaroslav Bibaev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-RU</language>
     <copyright>©Yaroslav Bibaev</copyright>
     
-	<atom:link href="https://ybibaev.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bibaev.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
