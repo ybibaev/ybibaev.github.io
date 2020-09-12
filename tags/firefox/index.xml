@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>firefox on Yaroslav Bibaev</title>
+    <link>https://bibaev.dev/tags/firefox/</link>
+    <description>Recent content in firefox on Yaroslav Bibaev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-RU</language>
+    <copyright>©Yaroslav Bibaev</copyright>
+    <lastBuildDate>Tue, 30 Jun 2020 21:04:39 +0300</lastBuildDate>
+    
+	<atom:link href="https://bibaev.dev/tags/firefox/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Минимальный набор браузерных расширений для комфортного интернет-сёрфинга</title>
+      <link>https://bibaev.dev/posts/browser-addons/</link>
+      <pubDate>Tue, 30 Jun 2020 21:04:39 +0300</pubDate>
+      
+      <guid>https://bibaev.dev/posts/browser-addons/</guid>
+      <description>Интернет-сёрфинг стал времяпровождением, без которого уже сложно представить современную жизнь в 2020 году, а браузер стал самой запускаемой программой и точкой входа в удивительный мир информации, тем самым заменив собой библиотеки, архивы и прочие существующие по сей день анахронизмы современности. Поэтому очень важно, чтобы интернет-сёрфинг был максимально удобным и безопасным.
+В качестве браузера я использую Firefox. Этот выбор я сделал достаточно давно и как мне кажется, я не прогадал. Несомненно меня радует то, что сейчас в Firefox добавляют много фичей связанных с безопасностью интернет-сёрфинга.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Yaroslav Bibaev</title>
+    <link>https://bibaev.dev/tags/python/</link>
+    <description>Recent content in python on Yaroslav Bibaev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-RU</language>
+    <copyright>©Yaroslav Bibaev</copyright>
+    <lastBuildDate>Wed, 17 Jun 2020 21:55:30 +0300</lastBuildDate>
+    
+	<atom:link href="https://bibaev.dev/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Отбивка в 79 символов и PEP8</title>
+      <link>https://bibaev.dev/posts/max-line-length-79-pep8/</link>
+      <pubDate>Wed, 17 Jun 2020 21:55:30 +0300</pubDate>
+      
+      <guid>https://bibaev.dev/posts/max-line-length-79-pep8/</guid>
+      <description>Ни так давно у меня уже выходила заметка про форматирование кода, но в это раз хочется поговорить о максимальной длине строки кода, которая является одним из важных параметров в оформлении кода и не редко порождает споры вокруг себя. Для python есть рекомендация по оформлению и называется она PEP8 (Style Guide for Python Code), в которой есть пункт про максимальную длину кода (Maximum Line Length) и по этой рекомендации она должна быть не больше 79 символов.</description>
+    </item>
+    
+    <item>
+      <title>async/await теперь и в django</title>
+      <link>https://bibaev.dev/posts/async-django/</link>
+      <pubDate>Sat, 06 Jun 2020 20:19:16 +0300</pubDate>
+      
+      <guid>https://bibaev.dev/posts/async-django/</guid>
+      <description>Только ленивый не написал о том, что Django начиная с версии 3.1 станет поддерживать асинхронные мидлвари и вью. Это действительно большое изменение для такого крупного и достаточно старого (~15 лет) фреймворка, как Django.
+В начале этого пути появится много кода, который будет нужен только для поддержки одновременной работы в фреймворка в асинхронном и синхронном мире. Несомненно, это усложнит поддержку и добавит больше точек отказа, но таков путь итеративной разработки. Тем более такая история уже была и тогда делали поддержку третьей версии python.</description>
+    </item>
+    
+  </channel>
+</rss>
