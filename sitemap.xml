@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://bibaev.dev/</loc>
+    <lastmod>2020-09-17T08:24:36+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bibaev.dev/about/</loc>
+    <lastmod>2020-09-17T08:24:36+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bibaev.dev/tags/automation/</loc>
     <lastmod>2020-09-06T17:38:43+03:00</lastmod>
   </url>
@@ -19,11 +29,6 @@
   
   <url>
     <loc>https://bibaev.dev/tags/</loc>
-    <lastmod>2020-09-06T17:38:43+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bibaev.dev/</loc>
     <lastmod>2020-09-06T17:38:43+03:00</lastmod>
   </url>
   

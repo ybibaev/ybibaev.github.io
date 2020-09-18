@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-RU</language>
     <copyright>©Yaroslav Bibaev</copyright>
-    <lastBuildDate>Sun, 06 Sep 2020 17:38:43 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2020 08:24:36 +0300</lastBuildDate>
     
 	<atom:link href="https://bibaev.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Обо мне</title>
+      <link>https://bibaev.dev/about/</link>
+      <pubDate>Thu, 17 Sep 2020 08:24:36 +0300</pubDate>
+      
+      <guid>https://bibaev.dev/about/</guid>
+      <description>Привет! Меня зовут Ярослав и я - разработчик. Возможно, это и прозвучало как &amp;ldquo;Привет! Меня зовут Ярослав и я алкоголик&amp;rdquo;, но на самом деле это не так. Честно. Хотя я действительно искренне люблю программировать.
+Чтобы долго не ходить вокруг да около, хочется сразу начать с определения цели блога. Ведь, на самом деле, она проста как ситцевые трусы и незатейлива как грабли - научиться понятно объяснять и доносить свои мысли. По совместительству было бы неплохо еще и научиться писать, но это скорее как побочный эффект.</description>
+    </item>
     
     <item>
       <title>Автоматизация и iOS</title>
