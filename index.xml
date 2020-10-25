@@ -13,6 +13,17 @@
     
     
     <item>
+      <title>Проверяем, что строка состоит из цифр на python</title>
+      <link>https://bibaev.dev/posts/check-string-contains-numbers-in-python/</link>
+      <pubDate>Sun, 25 Oct 2020 18:02:54 +0300</pubDate>
+      
+      <guid>https://bibaev.dev/posts/check-string-contains-numbers-in-python/</guid>
+      <description>Ни так давно мне потребовалось проверить в одном месте, что строка состоит из цифр, к которым мы все так давно привыкли. На всякий случай напомню, как выглядят для меня всем привычные цифры. Вот так: 0123456789.
+В памяти возникли какие-то воспоминания про str.isdigit(). «Ха, плевое дело!» – подумал я. Этим и воспользовался. Написал. Тесты проходят. Кажется, что все работает так, как нужно. Но как оказалось, что не все так просто&amp;hellip;
+В python, как в высокоуровневом языке, есть аж целых три метода для того, чтобы понять, что строка состоит из цифр: str.</description>
+    </item>
+    
+    <item>
       <title>Обо мне</title>
       <link>https://bibaev.dev/about/</link>
       <pubDate>Thu, 17 Sep 2020 08:24:36 +0300</pubDate>

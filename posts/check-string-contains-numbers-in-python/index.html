@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Проверяем, что строка состоит из цифр на python - Yaroslav Bibaev</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Проверяем, что строка состоит из цифр на python">
+<meta itemprop="description" content="Ни так давно мне потребовалось проверить в одном месте, что строка состоит из цифр. «Ха, плевое дело!» – подумал я. Но как оказалось, что не все так просто...">
+<meta itemprop="datePublished" content="2020-10-25T18:02:54&#43;03:00" />
+<meta itemprop="dateModified" content="2020-10-25T18:02:54&#43;03:00" />
+<meta itemprop="wordCount" content="448">
+
+
+
+<meta itemprop="keywords" content="python,dev," /><meta property="og:title" content="Проверяем, что строка состоит из цифр на python" />
+<meta property="og:description" content="Ни так давно мне потребовалось проверить в одном месте, что строка состоит из цифр. «Ха, плевое дело!» – подумал я. Но как оказалось, что не все так просто..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bibaev.dev/posts/check-string-contains-numbers-in-python/" />
+<meta property="article:published_time" content="2020-10-25T18:02:54+03:00" />
+<meta property="article:modified_time" content="2020-10-25T18:02:54+03:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Проверяем, что строка состоит из цифр на python"/>
+<meta name="twitter:description" content="Ни так давно мне потребовалось проверить в одном месте, что строка состоит из цифр. «Ха, плевое дело!» – подумал я. Но как оказалось, что не все так просто..."/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://bibaev.dev/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://bibaev.dev/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://bibaev.dev/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://bibaev.dev/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://bibaev.dev/">
+				<img src="/img/logo.jpg" alt="Yaroslav Bibaev" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://bibaev.dev/">Yaroslav Bibaev</a></h1>
+	<div class="site-description"><p>Персональный блог</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://instagram.com/e4cat" title="Instagram"><i data-feather="instagram"></i></a></li><li><a href="https://github.com/ybibaev" title="Github"><i data-feather="github"></i></a></li><li><a href="https://t.me/ybibaev" title="Telegram"><i data-feather="send"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav><span class="scheme-toggle"><a href="#" id="scheme-toggle"></a></div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Главная</a>
+			</li>
+			
+			<li>
+				<a href="/posts">Все посты</a>
+			</li>
+			
+			<li>
+				<a href="/about">Обо мне</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Теги</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">25</span>
+							<span class="rest">Oct 2020</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Проверяем, что строка состоит из цифр на python</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<p>Ни так давно мне потребовалось проверить в одном месте, что строка состоит из цифр, к которым мы все так давно привыкли. На всякий случай напомню, как выглядят для меня всем привычные цифры. Вот так: <code>0123456789</code>.</p>
+<p>В памяти возникли какие-то воспоминания  про <code>str.isdigit()</code>. «Ха, плевое дело!» – подумал я. Этим и воспользовался. Написал. Тесты проходят. Кажется, что все работает так, как нужно. Но как оказалось, что не все так просто&hellip;</p>
+<p>В python, как в высокоуровневом языке, есть аж целых три метода для того, чтобы понять, что строка состоит из цифр: <a href="https://docs.python.org/3/library/stdtypes.html#str.isdigit">str.isdigit()</a>, <a href="https://docs.python.org/3/library/stdtypes.html#str.isnumeric">str.isnumeric()</a> и <a href="https://docs.python.org/3/library/stdtypes.html#str.isdecimal">str.isdecimal()</a>. Подробнее, как это работает, разберем на примерах:</p>
+<ul>
+<li><a href="https://docs.python.org/3/library/stdtypes.html#str.isdigit">str.isdigit()</a></li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">&gt;&gt;&gt; <span style="color:#a31515">&#39;1&#39;</span>.isdigit()
+True
+&gt;&gt;&gt; <span style="color:#a31515">&#39;𐩁&#39;</span>.isdigit()
+True
+&gt;&gt;&gt; <span style="color:#a31515">&#39;٠&#39;</span>.isdigit()
+True
+&gt;&gt;&gt; <span style="color:#a31515">&#39;⅕&#39;</span>.isdigit()
+False
+&gt;&gt;&gt; <span style="color:#a31515">&#39;1a&#39;</span>.isdigit()
+False
+</code></pre></div><ul>
+<li><a href="https://docs.python.org/3/library/stdtypes.html#str.isnumeric">str.isnumeric()</a></li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">&gt;&gt;&gt; <span style="color:#a31515">&#39;1&#39;</span>.isnumeric()
+True
+&gt;&gt;&gt; <span style="color:#a31515">&#39;𐩁&#39;</span>.isnumeric()
+True
+&gt;&gt;&gt; <span style="color:#a31515">&#39;٠&#39;</span>.isnumeric()
+True
+&gt;&gt;&gt; <span style="color:#a31515">&#39;⅕&#39;</span>.isnumeric()
+True
+&gt;&gt;&gt; <span style="color:#a31515">&#39;1a&#39;</span>.isnumeric()
+False
+</code></pre></div><ul>
+<li><a href="https://docs.python.org/3/library/stdtypes.html#str.isdecimal">str.isdecimal()</a></li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">&gt;&gt;&gt; <span style="color:#a31515">&#39;1&#39;</span>.isdecimal()
+True
+&gt;&gt;&gt; <span style="color:#a31515">&#39;𐩁&#39;</span>.isdecimal()
+False
+&gt;&gt;&gt; <span style="color:#a31515">&#39;٠&#39;</span>.isdecimal()
+True
+&gt;&gt;&gt; <span style="color:#a31515">&#39;⅕&#39;</span>.isdecimal()
+False
+&gt;&gt;&gt; <span style="color:#a31515">&#39;1a&#39;</span>.isdecimal()
+False
+</code></pre></div><p>Да, казалось бы, что <code>str.isdecimal()</code> – это почти то, что нам нужно, но положительный результат с символом U+2155 – явно не то, что в действительности хотелось бы нам увидеть. Видимо, придется двигаться в пользу небольшого самописного варианта.</p>
+<p>Начнем с самого простого, что приходит в голову: пытаемся сразу преобразовать строку к числу, а при невозможности операции предполагаем, что это не число. Вот как это должно примерно выглядеть:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">&gt;&gt;&gt; <span style="color:#00f">def</span> is_digit(value: str) -&gt; bool:
+...     <span style="color:#00f">try</span>:
+...         int(value)
+...     <span style="color:#00f">except</span> ValueError:
+...         <span style="color:#00f">return</span> False
+...     <span style="color:#00f">return</span> True
+...
+&gt;&gt;&gt; is_digit(<span style="color:#a31515">&#39;1&#39;</span>)
+True
+&gt;&gt;&gt; is_digit(<span style="color:#a31515">&#39;𐩁&#39;</span>)
+False
+&gt;&gt;&gt; is_digit(<span style="color:#a31515">&#39;٠&#39;</span>)
+True
+&gt;&gt;&gt; is_digit(<span style="color:#a31515">&#39;⅕&#39;</span>)
+False
+&gt;&gt;&gt; is_digit(<span style="color:#a31515">&#39;1a&#39;</span>)
+False
+</code></pre></div><p>Получилось то же самое, что и <code>str.isdecimal()</code>, только кода в разы больше. Ну что, теперь настало время регулярных выражений:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">&gt;&gt;&gt; <span style="color:#00f">import</span> re
+&gt;&gt;&gt; <span style="color:#00f">def</span> is_digit(value: str) -&gt; bool:
+...     <span style="color:#00f">return</span> bool(re.match(<span style="color:#a31515">&#39;^[0-9]+$&#39;</span>, value))
+...
+&gt;&gt;&gt; is_digit(<span style="color:#a31515">&#39;1&#39;</span>)
+True
+&gt;&gt;&gt; is_digit(<span style="color:#a31515">&#39;𐩁&#39;</span>)
+False
+&gt;&gt;&gt; is_digit(<span style="color:#a31515">&#39;٠&#39;</span>)
+False
+&gt;&gt;&gt; is_digit(<span style="color:#a31515">&#39;⅕&#39;</span>)
+False
+&gt;&gt;&gt; is_digit(<span style="color:#a31515">&#39;1a&#39;</span>)
+False
+</code></pre></div><p>Этот вариант – то, что нам нужно. В принципе, можно на нем остановиться. Единственное, что если вы испытываете к регулярным выражениям не самые теплые чувства, то можно переписать это без их использования:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">&gt;&gt;&gt; <span style="color:#00f">import</span> string
+&gt;&gt;&gt; <span style="color:#00f">def</span> is_digit(value: str) -&gt; bool:
+...     <span style="color:#00f">return</span> bool(value <span style="color:#00f">and</span> all(s <span style="color:#00f">in</span> string.digits <span style="color:#00f">for</span> s <span style="color:#00f">in</span> value))
+...
+&gt;&gt;&gt; is_digit(<span style="color:#a31515">&#39;1&#39;</span>)
+True
+&gt;&gt;&gt; is_digit(<span style="color:#a31515">&#39;𐩁&#39;</span>)
+False
+&gt;&gt;&gt; is_digit(<span style="color:#a31515">&#39;٠&#39;</span>)
+False
+&gt;&gt;&gt; is_digit(<span style="color:#a31515">&#39;⅕&#39;</span>)
+False
+&gt;&gt;&gt; is_digit(<span style="color:#a31515">&#39;1a&#39;</span>)
+False
+</code></pre></div><p>Стало ли лучше? Возможно. Конечно, можно заморочиться, сравнить оба метода по скорости и после этого выбрать то, что быстрее. Но это точно не цель этой заметки. Оставим это на откуп пытливым умам и юным оптимизаторам.</p>
+<p>От себя скажу лишь то, что по возможности лучше испльзовать встроенные методы или, если они не подходят, то стартаться писать понятный код и уж только потом, когда не хватает скорости, пробовать это переписать на другой язык. На этом перестаю капитанить и до скорых встреч в следующих заметках. 😉</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/python">python</a></li>
+							
+							<li><a href="/tags/dev">dev</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2020  ©Yaroslav Bibaev |  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-168750586-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>
