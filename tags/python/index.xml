@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-RU</language>
     <copyright>©Yaroslav Bibaev</copyright>
-    <lastBuildDate>Sun, 25 Oct 2020 18:02:54 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2020 17:00:49 +0300</lastBuildDate>
     
 	<atom:link href="https://bibaev.dev/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Чтение документации</title>
+      <link>https://bibaev.dev/posts/reading-docs/</link>
+      <pubDate>Mon, 02 Nov 2020 17:00:49 +0300</pubDate>
+      
+      <guid>https://bibaev.dev/posts/reading-docs/</guid>
+      <description>Недавно осознал (да, именно пришло понимание), что функция print() — это всего лишь синтаксический сахар над sys.stdout.write. Посмотрел в документацию, а там так и написано. 🤔
+“И каков посыл?” — спросите вы. А тут все просто: чтение документации дает ответы на многие вопросы и делает жизнь значительно проще, а главное, волосы становятся мягкими и шелковистыми. Вот таков посыл. 😉</description>
+    </item>
     
     <item>
       <title>Проверяем, что строка состоит из цифр на python</title>

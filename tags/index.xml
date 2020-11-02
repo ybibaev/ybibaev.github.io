@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-RU</language>
     <copyright>©Yaroslav Bibaev</copyright>
-    <lastBuildDate>Sun, 25 Oct 2020 18:02:54 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2020 17:00:49 +0300</lastBuildDate>
     
 	<atom:link href="https://bibaev.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>dev</title>
       <link>https://bibaev.dev/tags/dev/</link>
-      <pubDate>Sun, 25 Oct 2020 18:02:54 +0300</pubDate>
+      <pubDate>Mon, 02 Nov 2020 17:00:49 +0300</pubDate>
       
       <guid>https://bibaev.dev/tags/dev/</guid>
       <description></description>
@@ -24,7 +24,7 @@
     <item>
       <title>python</title>
       <link>https://bibaev.dev/tags/python/</link>
-      <pubDate>Sun, 25 Oct 2020 18:02:54 +0300</pubDate>
+      <pubDate>Mon, 02 Nov 2020 17:00:49 +0300</pubDate>
       
       <guid>https://bibaev.dev/tags/python/</guid>
       <description></description>
