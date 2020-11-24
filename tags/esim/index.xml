@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>esim on Yaroslav Bibaev</title>
+    <link>https://bibaev.dev/tags/esim/</link>
+    <description>Recent content in esim on Yaroslav Bibaev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-RU</language>
+    <copyright>©Yaroslav Bibaev</copyright>
+    <lastBuildDate>Tue, 24 Nov 2020 08:27:12 +0300</lastBuildDate>
+    
+	<atom:link href="https://bibaev.dev/tags/esim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>eSIM</title>
+      <link>https://bibaev.dev/posts/esim/</link>
+      <pubDate>Tue, 24 Nov 2020 08:27:12 +0300</pubDate>
+      
+      <guid>https://bibaev.dev/posts/esim/</guid>
+      <description>Я из тех, кто всячески старается избегать втыканий посторонних предметов в свой телефон, а еще меня очень раздражают провода - ведь их тоже нужно куда-то втыкать. Я не переживал, когда началась тенденция к избавлению от разъёмов jack3.5 для подключения наушников к телефону, ведь я уже познал всю связанную с этим боль. Невозможно представить что-то раздражительнее, чем задеть неловким движением руки этот злосчастный проводок и тем самым выдернуть наушники из ушей. А помните, как их постоянно приходилось распутывать после того, как они полежали в кармане?</description>
+    </item>
+    
+  </channel>
+</rss>
