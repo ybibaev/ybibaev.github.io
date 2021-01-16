@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-RU</language>
     <copyright>©Yaroslav Bibaev</copyright>
-    <lastBuildDate>Sun, 06 Dec 2020 17:47:01 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 16 Jan 2021 16:32:01 +0300</lastBuildDate>
     
 	<atom:link href="https://bibaev.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ux</title>
+      <link>https://bibaev.dev/tags/ux/</link>
+      <pubDate>Sat, 16 Jan 2021 16:32:01 +0300</pubDate>
+      
+      <guid>https://bibaev.dev/tags/ux/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>dev</title>

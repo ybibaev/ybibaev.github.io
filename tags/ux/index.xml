@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ux on Yaroslav Bibaev</title>
+    <link>https://bibaev.dev/tags/ux/</link>
+    <description>Recent content in ux on Yaroslav Bibaev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-RU</language>
+    <copyright>©Yaroslav Bibaev</copyright>
+    <lastBuildDate>Sat, 16 Jan 2021 16:32:01 +0300</lastBuildDate>
+    
+	<atom:link href="https://bibaev.dev/tags/ux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Любовь к чехлам</title>
+      <link>https://bibaev.dev/posts/love-of-covers/</link>
+      <pubDate>Sat, 16 Jan 2021 16:32:01 +0300</pubDate>
+      
+      <guid>https://bibaev.dev/posts/love-of-covers/</guid>
+      <description>Чехлы достаточно давно пришли в наш обиход. Не удивлюсь, что даже первые люди вовсю их использовали, но сейчас меня это мало интересует и все забавные факты оставим знатоками истории.
+Мое знакомство с чехлами началось с детства, именно тогда я узнал про скатерти. В то время они были достаточно модными и накрывали каждый стол в нашем доме. Забавно, но я не помню как выглядел стол без скатерти, только она осталась в моей памяти.</description>
+    </item>
+    
+  </channel>
+</rss>
