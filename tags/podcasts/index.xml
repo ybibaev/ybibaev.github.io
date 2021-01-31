@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>podcasts on Yaroslav Bibaev</title>
+    <link>https://bibaev.dev/tags/podcasts/</link>
+    <description>Recent content in podcasts on Yaroslav Bibaev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-RU</language>
+    <copyright>©Yaroslav Bibaev</copyright>
+    <lastBuildDate>Sun, 31 Jan 2021 15:32:01 +0300</lastBuildDate>
+    
+	<atom:link href="https://bibaev.dev/tags/podcasts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Подкасты в 2021</title>
+      <link>https://bibaev.dev/posts/podcasts-2021/</link>
+      <pubDate>Sun, 31 Jan 2021 15:32:01 +0300</pubDate>
+      
+      <guid>https://bibaev.dev/posts/podcasts-2021/</guid>
+      <description>Я уже делал небольшой пост со списком предпочтительных подкастов. Это было почти год назад и вот, как это было:
+ Сколько-то лет тому назад я подсел на подкасты и так и остался с ними до сих пор. Для меня это еще один способ узнать что-то новое. Иногда, это даже интереснее, чем музыка или аудиокниги. Возможно именно по этому я и публикую здесь этот список из трех подкастов:
+ UWP - Eженедельный подкаст от Umputun (жизнь в Америке) Давай Поговорим (саморазвитие) Легко, просто и подкаст (мироощущение)   Кажется, настало время его обновить.</description>
+    </item>
+    
+  </channel>
+</rss>
