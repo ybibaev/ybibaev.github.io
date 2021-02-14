@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-RU</language>
     <copyright>©Yaroslav Bibaev</copyright>
-    <lastBuildDate>Sun, 06 Dec 2020 17:47:01 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 14 Feb 2021 17:32:01 +0300</lastBuildDate>
     
 	<atom:link href="https://bibaev.dev/tags/dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Понятный код</title>
+      <link>https://bibaev.dev/posts/clear-code/</link>
+      <pubDate>Sun, 14 Feb 2021 17:32:01 +0300</pubDate>
+      
+      <guid>https://bibaev.dev/posts/clear-code/</guid>
+      <description>На заре возникновения компьютеров вряд ли задумывались о понятном коде, ведь тогда даже не было языков программирования, а инструкции вводились в компьютер сразу в машинном коде — из нулей и единиц. Так себе развлечение, если честно. Осознав неудобства такого ввода, люди смекнули, что инструкции процессора можно заменить на мнемонику, которую будет легко запомнить. Так появился первый низкоуровневый язык программирования — язык ассемблера, где вместо нулей и единиц стало возможным вводить запоминающиеся человеку команды.</description>
+    </item>
     
     <item>
       <title>Тестовое задание</title>
