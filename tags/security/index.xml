@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mobile on Yaroslav Bibaev</title>
-    <link>https://bibaev.dev/tags/mobile/</link>
-    <description>Recent content in mobile on Yaroslav Bibaev</description>
+    <title>security on Yaroslav Bibaev</title>
+    <link>https://bibaev.dev/tags/security/</link>
+    <description>Recent content in security on Yaroslav Bibaev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-RU</language>
     <copyright>©Yaroslav Bibaev</copyright>
     <lastBuildDate>Sun, 21 Mar 2021 10:16:01 +0300</lastBuildDate>
     
-	<atom:link href="https://bibaev.dev/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bibaev.dev/tags/security/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,15 +20,6 @@
       <guid>https://bibaev.dev/posts/two-factor-authentication/</guid>
       <description>Сейчас большинство сервисов дают возможность включить двухфакторную аутентификацию, что повышает защищенность вашего аккаунта в несколько раз. Один из самых распространенных видов такой аутентификации - это когда сервис отправляет на мобильный телефон sms c одноразовым кодом доступа. Очень удобно, тем более, что подойдет любой мобильный телефон, который может принять и отобразить sms.
 Простота накладывает свой негативный отпечаток - любой, кто может перехватывать sms имеет возможность получить доступ к вашему аккаунту. Например, такое уже было с пользователями telegram.</description>
-    </item>
-    
-    <item>
-      <title>eSIM</title>
-      <link>https://bibaev.dev/posts/esim/</link>
-      <pubDate>Tue, 24 Nov 2020 08:27:12 +0300</pubDate>
-      
-      <guid>https://bibaev.dev/posts/esim/</guid>
-      <description>Я из тех, кто всячески старается избегать втыканий посторонних предметов в свой телефон, а еще меня очень раздражают провода - ведь их тоже нужно куда-то втыкать. Я не переживал, когда началась тенденция к избавлению от разъёмов jack3.5 для подключения наушников к телефону, ведь я уже познал всю связанную с этим боль. Невозможно представить что-то раздражительнее, чем задеть неловким движением руки этот злосчастный проводок и тем самым выдернуть наушники из ушей. А помните, как их постоянно приходилось распутывать после того, как они полежали в кармане?</description>
     </item>
     
   </channel>
