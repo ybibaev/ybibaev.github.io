@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Линейный код - Yaroslav Bibaev</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Линейный код">
+<meta itemprop="description" content="В функциях могут находиться вызовы других функций, а те вызывать еще дополнительные функции, тем самым заставляя читающего углубляться глубже и глубже в код...">
+<meta itemprop="datePublished" content="2021-04-04T16:41:01&#43;03:00" />
+<meta itemprop="dateModified" content="2021-04-04T16:41:01&#43;03:00" />
+<meta itemprop="wordCount" content="283">
+
+
+
+<meta itemprop="keywords" content="dev,clear-code," /><meta property="og:title" content="Линейный код" />
+<meta property="og:description" content="В функциях могут находиться вызовы других функций, а те вызывать еще дополнительные функции, тем самым заставляя читающего углубляться глубже и глубже в код..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bibaev.dev/posts/linear-code/" />
+<meta property="article:published_time" content="2021-04-04T16:41:01+03:00" />
+<meta property="article:modified_time" content="2021-04-04T16:41:01+03:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Линейный код"/>
+<meta name="twitter:description" content="В функциях могут находиться вызовы других функций, а те вызывать еще дополнительные функции, тем самым заставляя читающего углубляться глубже и глубже в код..."/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://bibaev.dev/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://bibaev.dev/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://bibaev.dev/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://bibaev.dev/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://bibaev.dev/">
+				<img src="/img/logo.jpg" alt="Yaroslav Bibaev" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://bibaev.dev/">Yaroslav Bibaev</a></h1>
+	<div class="site-description"><p>Субъективный блог</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://instagram.com/y.bibaev" title="Instagram"><i data-feather="instagram"></i></a></li><li><a href="https://github.com/ybibaev" title="Github"><i data-feather="github"></i></a></li><li><a href="https://t.me/ybibaev" title="Telegram"><i data-feather="send"></i></a></li><li><a href="https://linkedin.com/in/bibaev" title="LinkedIn"><i data-feather="linkedin"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav><span class="scheme-toggle"><a href="#" id="scheme-toggle"></a></div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Главная</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Теги</a>
+			</li>
+			
+			<li>
+				<a href="/about">Обо мне</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">04</span>
+							<span class="rest">Apr 2021</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Линейный код</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<p>Если попытаться представить написанный код в виде структуры, то это будет определение параметров, вызов функций с частью этих параметров и дальнейшая обработка полученного результата. В это же время в функциях могут находиться вызовы других функций, а те вызывать еще дополнительные функции, тем самым заставляя читающего углубляться глубже и глубже в код, никак не способствуя пониманию сути программы.</p>
+<p>Код уходящий в глубину, с точки зрения производительности, не играет важной роли, а вот с точки зрения читающего - в разы усложняет понимание и делает это весьма затратной задачей. При каждом таком “спуске”, чтобы дальше понимать смысл происходящего, приходится запоминать контекст вызова. Соответственно, чем больше таких переходов, тем больше контекста приходится держать одновременно в голове, увеличивая количество объектов в кратковременной памяти человека. К сожалению, туда не так много помещается, всего <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE_%D1%81%D0%B5%D0%BC%D1%8C_%D0%BF%D0%BB%D1%8E%D1%81-%D0%BC%D0%B8%D0%BD%D1%83%D1%81_%D0%B4%D0%B2%D0%B0">семь плюс-минус два объекта</a>, а <a href="https://www.bbc.com/ukrainian/vert_fut_russian/2016/03/160310_ru_s_vert_fut_why_does_walking_through_doorways_make_us_forget">“эффект дверного проема”</a> может еще сильнее усугубить ситуацию, заполнив кратковременную память в самый неподходящий момент не тем, чем бы хотелось. Это заставляет читающего постоянно возвращаться и перечитывать код заново, чтобы восстановить упущенный контекст. Так может происходить много раз, особенно если код содержит много вложенных условий, циклов, глобальных переменных и еще других “радостей” для читающего, тем самым затрудняя понимание в разы. Благо сегодняшние среды для разработки облегчают часть страданий и помогают с легкостью навигироваться по сложному коду, но проблема с одновременным удержанием большого количества объектов в кратковременной памяти пока еще не решена.</p>
+<p>Задумываясь о читаемости можно сделать вывод, что код заставляющий постоянно “заглядывать” глубже никак не способствует <a href="/posts/clear-code/">понятному коду</a>, а напротив — делает чтение максимально некомфортным. Существующему коду вряд ли что-то поможет, кроме жесткого рефакторинга или полного переписывания программы, а вот при написании нового — уже можно учитывать этот факт и писать код с линейным повествованием, делая написанный код похожим на рассказ.</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/dev">dev</a></li>
+							
+							<li><a href="/tags/clear-code">clear-code</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2020-2021  ©Yaroslav Bibaev |  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-168750586-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>
