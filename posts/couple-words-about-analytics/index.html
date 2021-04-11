@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Пару слов в защиту сбора аналитики - Yaroslav Bibaev</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Пару слов в защиту сбора аналитики">
+<meta itemprop="description" content="Приватность — это важно. Особенно сейчас, когда каждый сервис собирает кучу всего о пользователях: необходимые данные и даже те, которые не нужны. Просто на всякий случай...">
+<meta itemprop="datePublished" content="2021-04-11T18:37:01&#43;03:00" />
+<meta itemprop="dateModified" content="2021-04-11T18:37:01&#43;03:00" />
+<meta itemprop="wordCount" content="251">
+
+
+
+<meta itemprop="keywords" content="privacy,ux,dev," /><meta property="og:title" content="Пару слов в защиту сбора аналитики" />
+<meta property="og:description" content="Приватность — это важно. Особенно сейчас, когда каждый сервис собирает кучу всего о пользователях: необходимые данные и даже те, которые не нужны. Просто на всякий случай..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bibaev.dev/posts/couple-words-about-analytics/" />
+<meta property="article:published_time" content="2021-04-11T18:37:01+03:00" />
+<meta property="article:modified_time" content="2021-04-11T18:37:01+03:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Пару слов в защиту сбора аналитики"/>
+<meta name="twitter:description" content="Приватность — это важно. Особенно сейчас, когда каждый сервис собирает кучу всего о пользователях: необходимые данные и даже те, которые не нужны. Просто на всякий случай..."/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://bibaev.dev/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://bibaev.dev/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://bibaev.dev/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://bibaev.dev/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://bibaev.dev/">
+				<img src="/img/logo.jpg" alt="Yaroslav Bibaev" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://bibaev.dev/">Yaroslav Bibaev</a></h1>
+	<div class="site-description"><p>Субъективный блог</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://instagram.com/y.bibaev" title="Instagram"><i data-feather="instagram"></i></a></li><li><a href="https://github.com/ybibaev" title="Github"><i data-feather="github"></i></a></li><li><a href="https://t.me/ybibaev" title="Telegram"><i data-feather="send"></i></a></li><li><a href="https://linkedin.com/in/bibaev" title="LinkedIn"><i data-feather="linkedin"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav><span class="scheme-toggle"><a href="#" id="scheme-toggle"></a></div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Главная</a>
+			</li>
+			
+			<li>
+				<a href="/tags/">Теги</a>
+			</li>
+			
+			<li>
+				<a href="/about/">Обо мне</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">11</span>
+							<span class="rest">Apr 2021</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Пару слов в защиту сбора аналитики</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<p>Приватность — это важно. Особенно сейчас, когда каждый сервис собирает кучу всего о пользователях: необходимые данные и даже те, которые не нужны. Просто на всякий случай. В итоге они могут быть доступны каждому, включая чувствительные данные, которым точно не место в публичном доступе. Напуганные этим мы теперь стремимся минимизировать возможный ущерб и делимся только минимальным необходимым набором данных или вообще, если это возможно, не делимся. Блокируем трекеры и отключаем, там где это возможно, сбор любых аналитических данных. В общем огораживаемся по полной, чтобы наши приватные данные не стали вдруг публичными.</p>
+<p>К сожалению, полный отказ от аналитических данных плохо сказывается на качестве проектирования интерфейсов. Разработчикам теперь не понять как люди пользуются приложением. Верны ли оказались предположения при проектировании пользовательского опыта, влияет ли подсветка поля ввода другим цветом на более частое его использование и тому подобное. Теперь об этом никто не узнает, либо выборка окажется не репрезентативной, и автор удалит &ldquo;ненужный&rdquo; элемент интерфейса, которым, исходя из аналитических данных, никто не пользовался. Недавно попал в похожую ситуацию, прочитав, что <a href="https://www.opennet.ru/opennews/art.shtml?num=54761">разработчики firefox удаляют компактный режим</a>, к которому уже так привык за годы использования этого браузера. Режим убирает лишнее из раздутого всевозможными отступами интерфейса. Теперь возможно этого не будет. Печально.</p>
+<p>Это подтолкнуло к пониманию, что полный отказ от сбора аналитических данных в итоге плачевно влияет на пользовательский опыт. Переосмыслив этот факт, попытался найти баланс между приватностью и улучшением пользовательского опыта. Теперь везде, где собирается аналитика, вместо полного отключения, стараюсь оставить включенным только сбор обезличенных данных, чтобы как можно меньше попадать в такие вот ситуации. Такие дела.</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/privacy/">privacy</a></li>
+							
+							<li><a href="/tags/ux/">ux</a></li>
+							
+							<li><a href="/tags/dev/">dev</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2020-2021  ©Yaroslav Bibaev |  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-168750586-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>

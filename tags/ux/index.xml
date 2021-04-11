@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-RU</language>
     <copyright>©Yaroslav Bibaev</copyright>
-    <lastBuildDate>Sun, 24 Jan 2021 09:32:01 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 11 Apr 2021 18:37:01 +0300</lastBuildDate>
     
 	<atom:link href="https://bibaev.dev/tags/ux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Пару слов в защиту сбора аналитики</title>
+      <link>https://bibaev.dev/posts/couple-words-about-analytics/</link>
+      <pubDate>Sun, 11 Apr 2021 18:37:01 +0300</pubDate>
+      
+      <guid>https://bibaev.dev/posts/couple-words-about-analytics/</guid>
+      <description>Приватность — это важно. Особенно сейчас, когда каждый сервис собирает кучу всего о пользователях: необходимые данные и даже те, которые не нужны. Просто на всякий случай. В итоге они могут быть доступны каждому, включая чувствительные данные, которым точно не место в публичном доступе. Напуганные этим мы теперь стремимся минимизировать возможный ущерб и делимся только минимальным необходимым набором данных или вообще, если это возможно, не делимся. Блокируем трекеры и отключаем, там где это возможно, сбор любых аналитических данных.</description>
+    </item>
     
     <item>
       <title>Психбольница в руках пациентов или коротко про важность интерфейсов</title>
