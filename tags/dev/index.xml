@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-RU</language>
     <copyright>©Yaroslav Bibaev</copyright>
-    <lastBuildDate>Sun, 11 Apr 2021 18:37:01 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 24 May 2021 09:25:00 +0300</lastBuildDate>
     
 	<atom:link href="https://bibaev.dev/tags/dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Именованные параметры функции</title>
+      <link>https://bibaev.dev/posts/keyword-arguments/</link>
+      <pubDate>Mon, 24 May 2021 09:25:00 +0300</pubDate>
+      
+      <guid>https://bibaev.dev/posts/keyword-arguments/</guid>
+      <description>Один из способов сделать код более понятным для чтения — использовать именованные параметры для передачи в функцию. О том, что такое линейный код и как это влияет на чтение - я писал здесь.
+Существуют два способа передачи параметров в функцию: виде позиционных параметров и в виде именованных. Позиционные параметры зависят, как не трудно догадаться, от позиции и не важно, какое они имеют наименование. Главное, чтобы нужный параметр соответствовал своему месту. Вот как это будет выглядеть на примере:</description>
+    </item>
     
     <item>
       <title>Пару слов в защиту сбора аналитики</title>

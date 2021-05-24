@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Именованные параметры функции - Yaroslav Bibaev</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Именованные параметры функции">
+<meta itemprop="description" content="Один из способов сделать код более понятным для чтения — использовать именованные параметры для передачи в функцию">
+<meta itemprop="datePublished" content="2021-05-24T09:25:00&#43;03:00" />
+<meta itemprop="dateModified" content="2021-05-24T09:25:00&#43;03:00" />
+<meta itemprop="wordCount" content="484">
+
+
+
+<meta itemprop="keywords" content="clear-code,dev,python," /><meta property="og:title" content="Именованные параметры функции" />
+<meta property="og:description" content="Один из способов сделать код более понятным для чтения — использовать именованные параметры для передачи в функцию" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bibaev.dev/posts/keyword-arguments/" />
+<meta property="article:published_time" content="2021-05-24T09:25:00+03:00" />
+<meta property="article:modified_time" content="2021-05-24T09:25:00+03:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Именованные параметры функции"/>
+<meta name="twitter:description" content="Один из способов сделать код более понятным для чтения — использовать именованные параметры для передачи в функцию"/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://bibaev.dev/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://bibaev.dev/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://bibaev.dev/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://bibaev.dev/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://bibaev.dev/">
+				<img src="/img/logo.jpg" alt="Yaroslav Bibaev" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://bibaev.dev/">Yaroslav Bibaev</a></h1>
+	<div class="site-description"><p>Субъективный блог</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://instagram.com/y.bibaev" title="Instagram"><i data-feather="instagram"></i></a></li><li><a href="https://github.com/ybibaev" title="Github"><i data-feather="github"></i></a></li><li><a href="https://t.me/ybibaev" title="Telegram"><i data-feather="send"></i></a></li><li><a href="https://linkedin.com/in/bibaev" title="LinkedIn"><i data-feather="linkedin"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav><span class="scheme-toggle"><a href="#" id="scheme-toggle"></a></div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Главная</a>
+			</li>
+			
+			<li>
+				<a href="/tags/">Теги</a>
+			</li>
+			
+			<li>
+				<a href="/about/">Обо мне</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">24</span>
+							<span class="rest">May 2021</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Именованные параметры функции</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<p>Один из способов сделать код более понятным для чтения — использовать именованные параметры для передачи в функцию. О том, что такое линейный код и как это влияет на чтение - я писал <a href="/posts/linear-code/">здесь</a>.</p>
+<p>Существуют два способа передачи параметров в функцию: виде позиционных параметров и в виде именованных. Позиционные параметры зависят, как не трудно догадаться, от позиции и не важно, какое они имеют наименование. Главное, чтобы нужный параметр соответствовал своему месту. Вот как это будет выглядеть на примере:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">&gt;&gt;&gt; <span style="color:#00f">def</span> create_employee(first_name: str, last_name: str, birth_year: int) -&gt; Employee:
+...     ...
+...
+&gt;&gt;&gt; employee = create_employee(<span style="color:#a31515">&#39;Sarah&#39;</span>, <span style="color:#a31515">&#39;Parker&#39;</span>, 1992)
+&lt;Employee&gt;
+</code></pre></div><p>Если поменять порядок аргументов, то код может упасть с ошибкой:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">&gt;&gt;&gt; employee = create_employee(1992, <span style="color:#a31515">&#39;Sarah&#39;</span>, <span style="color:#a31515">&#39;Parker&#39;</span>)
+ValueError
+</code></pre></div><p>Именованные параметры наоборот, не зависят от позиции и передается по имени аргумента:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">&gt;&gt;&gt; employee = create_employee(first_name=<span style="color:#a31515">&#39;Sarah&#39;</span>, last_name=<span style="color:#a31515">&#39;Parker&#39;</span>, birth_year=1992)
+&lt;Employee&gt;
+&gt;&gt;&gt; employee = create_employee(birth_year=1992, first_name=<span style="color:#a31515">&#39;Sarah&#39;</span>, last_name=<span style="color:#a31515">&#39;Parker&#39;</span>)
+&lt;Employee&gt;
+</code></pre></div><p>Порядок аргументов не важен, главное чтобы совпадало имя, а вот код, в котором не совпадет имя аргумента, работать не будет и вызов функции завершится с ошибкой:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">&gt;&gt;&gt; employee = create_employee(first_name=<span style="color:#a31515">&#39;Sarah&#39;</span>, surname=<span style="color:#a31515">&#39;Parker&#39;</span>, birth_year=1992)
+TypeError: create_employee() got an unexpected keyword argument <span style="color:#a31515">&#39;surname&#39;</span>
+</code></pre></div><p>Давайте усложним наш пример и добавим туда еще один аргумент <code>years_of_experience</code>:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">&gt;&gt;&gt; <span style="color:#00f">def</span> create_employee(first_name: str, last_name: str, birth_year: int, years_of_experience:int) -&gt; Employee:
+...    ...
+...
+&gt;&gt;&gt; employee = create_employee(<span style="color:#a31515">&#39;Sarah&#39;</span>, <span style="color:#a31515">&#39;Parker&#39;</span>, 1992, 7)
+&lt;Employee&gt;
+</code></pre></div><p>Если имена первых трех параметров можно было предположит по значениям, то наименование четвертого — загадка. Четвертый параметр — магическое число, чьё наименование получится узнать только “заглянув” в определение функции. Тем самым усложняя понимание кода для читающего.
+Теперь давайте перепишем этот вызов с помощью именованных параметров:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">&gt;&gt;&gt; employee = create_employee(first_name=<span style="color:#a31515">&#39;Sarah&#39;</span>, last_name=<span style="color:#a31515">&#39;Parker&#39;</span>, birth_year=1992, years_of_experience=7)
+&lt;Employee&gt;
+</code></pre></div><p>Теперь для понимания, что это за параметр и за что он отвечает, не требуется никаких дополнительных действий. Код с использованием именованных параметров стал понятным.</p>
+<p>Использование именованных параметров в функциях с одним или двумя параметрами — не имеет особого смысла, так как все понятно из названия функции и контекста. Например, функция извлечения квадратного корня:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">import</span> math
+
+<span style="color:#00f">assert</span> math.sqrt(25) == 5.0
+</code></pre></div><p>Или например, функция для сравнений двух значений:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">import</span> operator
+
+<span style="color:#00f">assert</span> operator.eq(1, 1) <span style="color:#00f">is</span> True
+</code></pre></div><p>При использовании внешних библиотек возникают сложности по причине, что мы не можем контролировать внешние интерфейсы. В таких случаях можно обложиться фасадом — функцию из внешней библиотеки оборачиваем в свой интерфейс. Это позволит получить контроль над интерфейсом и уменьшить зависимость кода от внешних библиотек. При смене зависимости остается исправить код только в фасаде, а не во всех местах, где мог использоваться вызов из внешней библиотеке.</p>
+<p>Еще, как вариант, можно рассмотреть добавление комментариев к вызову функции:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">employee = create_employee(
+   <span style="color:#a31515">&#39;Sarah&#39;</span>, <span style="color:#008000"># first_name</span>
+   <span style="color:#a31515">&#39;Parker&#39;</span>, <span style="color:#008000"># last_name</span>
+   1992, <span style="color:#008000"># birth_year</span>
+   7, <span style="color:#008000"># years_of_experience</span>
+)
+</code></pre></div><p>Получилось малость громоздко, но зато мы снизили ментальную нагрузку и улучшили опыт понимания кода. Конечно же, лучше такую проверку автоматизировать и добавить в линтер. Ведь люди склонны ошибаться, а машины — нет. Не нашел для питона что-то популярного, но есть <a href="https://github.com/vchaptsev/flake8-keyword-arguments">вот такой плагин</a> к flake8, который можно допилить до рабочего состояния и использовать во благо.</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/clear-code/">clear-code</a></li>
+							
+							<li><a href="/tags/dev/">dev</a></li>
+							
+							<li><a href="/tags/python/">python</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2020-2021  ©Yaroslav Bibaev |  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-168750586-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>

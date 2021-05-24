@@ -7,17 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-RU</language>
     <copyright>©Yaroslav Bibaev</copyright>
-    <lastBuildDate>Sun, 11 Apr 2021 18:37:01 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 24 May 2021 09:25:00 +0300</lastBuildDate>
     
 	<atom:link href="https://bibaev.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>clear code</title>
+      <link>https://bibaev.dev/tags/clear-code/</link>
+      <pubDate>Mon, 24 May 2021 09:25:00 +0300</pubDate>
+      
+      <guid>https://bibaev.dev/tags/clear-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>dev</title>
       <link>https://bibaev.dev/tags/dev/</link>
-      <pubDate>Sun, 11 Apr 2021 18:37:01 +0300</pubDate>
+      <pubDate>Mon, 24 May 2021 09:25:00 +0300</pubDate>
       
       <guid>https://bibaev.dev/tags/dev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://bibaev.dev/tags/python/</link>
+      <pubDate>Mon, 24 May 2021 09:25:00 +0300</pubDate>
+      
+      <guid>https://bibaev.dev/tags/python/</guid>
       <description></description>
     </item>
     
@@ -36,15 +54,6 @@
       <pubDate>Sun, 11 Apr 2021 18:37:01 +0300</pubDate>
       
       <guid>https://bibaev.dev/tags/ux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>clear code</title>
-      <link>https://bibaev.dev/tags/clear-code/</link>
-      <pubDate>Sun, 04 Apr 2021 16:41:01 +0300</pubDate>
-      
-      <guid>https://bibaev.dev/tags/clear-code/</guid>
       <description></description>
     </item>
     
@@ -81,15 +90,6 @@
       <pubDate>Sun, 24 Jan 2021 09:32:01 +0300</pubDate>
       
       <guid>https://bibaev.dev/tags/books/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://bibaev.dev/tags/python/</link>
-      <pubDate>Mon, 02 Nov 2020 17:00:49 +0300</pubDate>
-      
-      <guid>https://bibaev.dev/tags/python/</guid>
       <description></description>
     </item>
     

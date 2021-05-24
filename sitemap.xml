@@ -3,22 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://bibaev.dev/tags/clear-code/</loc>
+    <lastmod>2021-05-24T09:25:00+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bibaev.dev/tags/dev/</loc>
-    <lastmod>2021-04-11T18:37:01+03:00</lastmod>
+    <lastmod>2021-05-24T09:25:00+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://bibaev.dev/posts/</loc>
-    <lastmod>2021-04-11T18:37:01+03:00</lastmod>
+    <lastmod>2021-05-24T09:25:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bibaev.dev/tags/privacy/</loc>
-    <lastmod>2021-04-11T18:37:01+03:00</lastmod>
+    <loc>https://bibaev.dev/tags/python/</loc>
+    <lastmod>2021-05-24T09:25:00+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://bibaev.dev/tags/</loc>
+    <lastmod>2021-05-24T09:25:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bibaev.dev/posts/keyword-arguments/</loc>
+    <lastmod>2021-05-24T09:25:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bibaev.dev/tags/privacy/</loc>
     <lastmod>2021-04-11T18:37:01+03:00</lastmod>
   </url>
   
@@ -30,11 +45,6 @@
   <url>
     <loc>https://bibaev.dev/posts/couple-words-about-analytics/</loc>
     <lastmod>2021-04-11T18:37:01+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bibaev.dev/tags/clear-code/</loc>
-    <lastmod>2021-04-04T16:41:01+03:00</lastmod>
   </url>
   
   <url>
@@ -95,11 +105,6 @@
   <url>
     <loc>https://bibaev.dev/posts/esim/</loc>
     <lastmod>2020-11-24T08:27:12+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bibaev.dev/tags/python/</loc>
-    <lastmod>2020-11-02T17:00:49+03:00</lastmod>
   </url>
   
   <url>
