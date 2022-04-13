@@ -7,10 +7,55 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-RU</language>
     <copyright>©Yaroslav Bibaev</copyright>
-    <lastBuildDate>Mon, 24 May 2021 09:25:00 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 13 Apr 2022 09:05:00 +0300</lastBuildDate>
     
 	<atom:link href="https://bibaev.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>4g</title>
+      <link>https://bibaev.dev/tags/4g/</link>
+      <pubDate>Wed, 13 Apr 2022 09:05:00 +0300</pubDate>
+      
+      <guid>https://bibaev.dev/tags/4g/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>internet</title>
+      <link>https://bibaev.dev/tags/internet/</link>
+      <pubDate>Wed, 13 Apr 2022 09:05:00 +0300</pubDate>
+      
+      <guid>https://bibaev.dev/tags/internet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mobile</title>
+      <link>https://bibaev.dev/tags/mobile/</link>
+      <pubDate>Wed, 13 Apr 2022 09:05:00 +0300</pubDate>
+      
+      <guid>https://bibaev.dev/tags/mobile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spb</title>
+      <link>https://bibaev.dev/tags/spb/</link>
+      <pubDate>Wed, 13 Apr 2022 09:05:00 +0300</pubDate>
+      
+      <guid>https://bibaev.dev/tags/spb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wireless</title>
+      <link>https://bibaev.dev/tags/wireless/</link>
+      <pubDate>Wed, 13 Apr 2022 09:05:00 +0300</pubDate>
+      
+      <guid>https://bibaev.dev/tags/wireless/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>clear code</title>
@@ -54,15 +99,6 @@
       <pubDate>Sun, 11 Apr 2021 18:37:01 +0300</pubDate>
       
       <guid>https://bibaev.dev/tags/ux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mobile</title>
-      <link>https://bibaev.dev/tags/mobile/</link>
-      <pubDate>Sun, 21 Mar 2021 10:16:01 +0300</pubDate>
-      
-      <guid>https://bibaev.dev/tags/mobile/</guid>
       <description></description>
     </item>
     

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-RU</language>
     <copyright>©Yaroslav Bibaev</copyright>
-    <lastBuildDate>Mon, 24 May 2021 09:25:00 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 13 Apr 2022 09:05:00 +0300</lastBuildDate>
     
 	<atom:link href="https://bibaev.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Беспроводной интернет</title>
+      <link>https://bibaev.dev/posts/wireless-internet/</link>
+      <pubDate>Wed, 13 Apr 2022 09:05:00 +0300</pubDate>
+      
+      <guid>https://bibaev.dev/posts/wireless-internet/</guid>
+      <description>Текущий договор аренды заканчивался и впереди маячил переезд. Жить в текущем месте было не так уж и плохо, но, правда, хотелось попробовать чего-то ещё. Например, переезд в центральный район. Среди прочих, попался вариант аренды квартиры в двухэтажном доме в достаточно тихом районе. Это особенно радовало после того, как прожил какое-то время вблизи Московского проспекта. Ощущать тишину, особенно с открытыми окнами, теперь казалось чем-то необычным. Единственное, что вызывало сомнения, — в квартиру не был проведён проводной интернет, да и в принципе, весь дом не был к нему подключён: старый жилой фонд и всего несколько квартир.</description>
+    </item>
     
     <item>
       <title>Именованные параметры функции</title>
